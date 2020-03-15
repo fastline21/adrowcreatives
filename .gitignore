@@ -1,0 +1,8 @@
+# Dependency directories
+vendor/
+
+# dotenv environment variables file
+.env
+
+# Upload directories
+uploads/

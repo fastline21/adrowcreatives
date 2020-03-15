@@ -1,2 +1,8 @@
-# adrowcreatives
-Web App for Adrow Creatives
+# Adrow Creatives
+Web App for Adrow Creatives Inc.
+
+# Get Started
+To install PHP Dependency
+```
+composer install
+```

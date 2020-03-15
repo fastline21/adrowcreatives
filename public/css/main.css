@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    position: relative;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* Loading */
+.div__loading {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+    overflow: hidden;
+}
+.div__loading video {
+    object-fit: fill;
+    height: 100vh;
+    min-height: 100%;
+    width: 100%;
+}
+
+/* Button */
+.section__button {
+    background-color: #E79A08;
+    border: none;
+}
+.section__button:hover {
+    background-color: #DD870F;
+    border: none;
+}
+
+/* Logo */
+.logo {
+    width: 28%;
+}
+
+/* Login */
+.login__background--right {
+    /*background-color: #F1AD01;*/
+    width: 50%; /* 64% */
+    height: 99%;
+    position: absolute;
+    top: 0;
+    left: 50%; /* 36% */
+    border-left: 15em solid transparent;
+    border-right: 0 solid transparent;
+    border-bottom: 39.9em solid #F1AD01;
+    filter: drop-shadow(0 0 5px black);
+}
+.section__label--login {
+    color: #fff;
+}
+
+.login__right {
+    opacity: 0;
+}
+
+/* Error */
+.button__error {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.logo__warning {
+    font-size: 3em;
+    color: #dc3545;
+}
+
+/* QR Code */
+.qrCode {
+    width: 2em;
+}
+
+/* Sidebar */
+.sidebar-sticky .active {
+    color: #fff !important;
+    background-color: rgba(0, 0, 0, .1);
+}
+.sidebar-sticky .nav-link {
+    color: #c1c1c1;
+}
+.sidebar-sticky .nav-link:hover {
+    color: #fff;
+    background-color: rgba(236, 236, 236, .1);
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    /*padding: 48px 0 0; Old Value*/
+    padding: 80px 0 0;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: 1.5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+/* Footer */
+footer {
+    position: sticky;
+    bottom: 0;
+    z-index: 999;
+    box-shadow: 0 -.5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.footer {
+    opacity: 0;
+}
+
+/* Print Dialog */
+@media print {
+    nav, footer, hr, .btn, .sidebar {
+        visibility: hidden;
+    }
+    
+    main {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+    }
+}
